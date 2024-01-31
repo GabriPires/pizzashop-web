@@ -35,7 +35,7 @@ export function OrderStatus({ status }: OrderStatusProps) {
 
   return (
     <div className="flex items-center gap-2">
-      <span className={indicator({ status })}></span>
+      <span className={indicator({ status })} data-testid="badge"></span>
       <span className="font-medium text-muted-foreground">
         {orderStatusMap[status]}
       </span>
